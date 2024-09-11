@@ -1,0 +1,1537 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Wed Sep  4 22:15:19 2024
+| Host         : IPAA running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_timing_summary -max_paths 10 -file top_wrapper_timing_summary_routed.rpt -pb top_wrapper_timing_summary_routed.pb -rpx top_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : top_wrapper
+| Device       : 7z010-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule  Severity  Description  Violations  
+----  --------  -----------  ----------  
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.781        0.000                      0                 3898        0.065        0.000                      0                 3898        4.020        0.000                       0                  1516  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          1.781        0.000                      0                 3898        0.065        0.000                      0                 3898        4.020        0.000                       0                  1516  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.781ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.065ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.781ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[30]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        8.068ns  (logic 3.850ns (47.718%)  route 4.218ns (52.282%))
+  Logic Levels:           13  (CARRY4=7 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.165 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     7.165    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_0
+    SLICE_X19Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.279 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.279    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__3_n_0
+    SLICE_X19Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.393 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.393    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__4_n_0
+    SLICE_X19Y56         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.727 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__5/O[1]
+                         net (fo=3, routed)           0.597     8.323    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__5_n_6
+    SLICE_X16Y58         LUT5 (Prop_lut5_I4_O)        0.296     8.619 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_13/O
+                         net (fo=2, routed)           0.475     9.095    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_13_n_0
+    SLICE_X16Y57         LUT5 (Prop_lut5_I0_O)        0.348     9.443 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_3/O
+                         net (fo=2, routed)           0.589    10.031    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_3_n_0
+    SLICE_X17Y54         LUT6 (Prop_lut6_I0_O)        0.124    10.155 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_7/O
+                         net (fo=1, routed)           0.000    10.155    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_7_n_0
+    SLICE_X17Y54         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.705 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    10.705    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_n_0
+    SLICE_X17Y55         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    11.039 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__6/O[1]
+                         net (fo=1, routed)           0.000    11.039    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[30]
+    SLICE_X17Y55         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y55         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[30]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y55         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[30]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -11.039    
+  -------------------------------------------------------------------
+                         slack                                  1.781    
+
+Slack (MET) :             1.876ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.973ns  (logic 3.755ns (47.095%)  route 4.218ns (52.905%))
+  Logic Levels:           13  (CARRY4=7 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.165 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     7.165    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_0
+    SLICE_X19Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.279 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.279    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__3_n_0
+    SLICE_X19Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.393 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.393    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__4_n_0
+    SLICE_X19Y56         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.727 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__5/O[1]
+                         net (fo=3, routed)           0.597     8.323    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__5_n_6
+    SLICE_X16Y58         LUT5 (Prop_lut5_I4_O)        0.296     8.619 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_13/O
+                         net (fo=2, routed)           0.475     9.095    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_13_n_0
+    SLICE_X16Y57         LUT5 (Prop_lut5_I0_O)        0.348     9.443 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_3/O
+                         net (fo=2, routed)           0.589    10.031    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_3_n_0
+    SLICE_X17Y54         LUT6 (Prop_lut6_I0_O)        0.124    10.155 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_7/O
+                         net (fo=1, routed)           0.000    10.155    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_7_n_0
+    SLICE_X17Y54         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.705 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    10.705    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_n_0
+    SLICE_X17Y55         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    10.944 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__6/O[2]
+                         net (fo=1, routed)           0.000    10.944    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[31]
+    SLICE_X17Y55         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y55         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[31]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y55         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[31]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.944    
+  -------------------------------------------------------------------
+                         slack                                  1.876    
+
+Slack (MET) :             1.892ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.957ns  (logic 3.739ns (46.989%)  route 4.218ns (53.011%))
+  Logic Levels:           13  (CARRY4=7 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.165 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/CO[3]
+                         net (fo=1, routed)           0.000     7.165    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_0
+    SLICE_X19Y54         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.279 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__3/CO[3]
+                         net (fo=1, routed)           0.000     7.279    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__3_n_0
+    SLICE_X19Y55         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     7.393 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__4/CO[3]
+                         net (fo=1, routed)           0.000     7.393    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__4_n_0
+    SLICE_X19Y56         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.727 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__5/O[1]
+                         net (fo=3, routed)           0.597     8.323    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__5_n_6
+    SLICE_X16Y58         LUT5 (Prop_lut5_I4_O)        0.296     8.619 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_13/O
+                         net (fo=2, routed)           0.475     9.095    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_13_n_0
+    SLICE_X16Y57         LUT5 (Prop_lut5_I0_O)        0.348     9.443 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_3/O
+                         net (fo=2, routed)           0.589    10.031    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_3_n_0
+    SLICE_X17Y54         LUT6 (Prop_lut6_I0_O)        0.124    10.155 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_7/O
+                         net (fo=1, routed)           0.000    10.155    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_i_7_n_0
+    SLICE_X17Y54         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.705 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5/CO[3]
+                         net (fo=1, routed)           0.000    10.705    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5_n_0
+    SLICE_X17Y55         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    10.928 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__6/O[0]
+                         net (fo=1, routed)           0.000    10.928    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[29]
+    SLICE_X17Y55         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y55         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[29]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y55         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[29]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.928    
+  -------------------------------------------------------------------
+                         slack                                  1.892    
+
+Slack (MET) :             1.909ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.940ns  (logic 3.718ns (46.824%)  route 4.222ns (53.176%))
+  Logic Levels:           12  (CARRY4=6 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/O[1]
+                         net (fo=3, routed)           0.732     8.116    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_6
+    SLICE_X19Y49         LUT5 (Prop_lut5_I4_O)        0.299     8.415 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13/O
+                         net (fo=2, routed)           0.442     8.857    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13_n_0
+    SLICE_X18Y50         LUT5 (Prop_lut5_I0_O)        0.327     9.184 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3/O
+                         net (fo=2, routed)           0.491     9.675    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3_n_0
+    SLICE_X17Y51         LUT6 (Prop_lut6_I0_O)        0.124     9.799 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     9.799    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7_n_0
+    SLICE_X17Y51         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.349 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    10.349    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_n_0
+    SLICE_X17Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.463 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    10.463    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3_n_0
+    SLICE_X17Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.577 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    10.577    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4_n_0
+    SLICE_X17Y54         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.911 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5/O[1]
+                         net (fo=1, routed)           0.000    10.911    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[26]
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[26]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y54         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[26]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.911    
+  -------------------------------------------------------------------
+                         slack                                  1.909    
+
+Slack (MET) :             1.930ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[28]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.919ns  (logic 3.697ns (46.683%)  route 4.222ns (53.317%))
+  Logic Levels:           12  (CARRY4=6 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/O[1]
+                         net (fo=3, routed)           0.732     8.116    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_6
+    SLICE_X19Y49         LUT5 (Prop_lut5_I4_O)        0.299     8.415 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13/O
+                         net (fo=2, routed)           0.442     8.857    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13_n_0
+    SLICE_X18Y50         LUT5 (Prop_lut5_I0_O)        0.327     9.184 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3/O
+                         net (fo=2, routed)           0.491     9.675    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3_n_0
+    SLICE_X17Y51         LUT6 (Prop_lut6_I0_O)        0.124     9.799 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     9.799    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7_n_0
+    SLICE_X17Y51         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.349 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    10.349    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_n_0
+    SLICE_X17Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.463 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    10.463    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3_n_0
+    SLICE_X17Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.577 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    10.577    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4_n_0
+    SLICE_X17Y54         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    10.890 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5/O[3]
+                         net (fo=1, routed)           0.000    10.890    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[28]
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[28]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y54         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[28]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.890    
+  -------------------------------------------------------------------
+                         slack                                  1.930    
+
+Slack (MET) :             2.004ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[27]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.845ns  (logic 3.623ns (46.180%)  route 4.222ns (53.820%))
+  Logic Levels:           12  (CARRY4=6 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/O[1]
+                         net (fo=3, routed)           0.732     8.116    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_6
+    SLICE_X19Y49         LUT5 (Prop_lut5_I4_O)        0.299     8.415 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13/O
+                         net (fo=2, routed)           0.442     8.857    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13_n_0
+    SLICE_X18Y50         LUT5 (Prop_lut5_I0_O)        0.327     9.184 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3/O
+                         net (fo=2, routed)           0.491     9.675    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3_n_0
+    SLICE_X17Y51         LUT6 (Prop_lut6_I0_O)        0.124     9.799 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     9.799    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7_n_0
+    SLICE_X17Y51         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.349 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    10.349    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_n_0
+    SLICE_X17Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.463 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    10.463    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3_n_0
+    SLICE_X17Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.577 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    10.577    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4_n_0
+    SLICE_X17Y54         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    10.816 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5/O[2]
+                         net (fo=1, routed)           0.000    10.816    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[27]
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[27]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y54         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[27]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.816    
+  -------------------------------------------------------------------
+                         slack                                  2.004    
+
+Slack (MET) :             2.020ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.829ns  (logic 3.607ns (46.070%)  route 4.222ns (53.930%))
+  Logic Levels:           12  (CARRY4=6 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/O[1]
+                         net (fo=3, routed)           0.732     8.116    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_6
+    SLICE_X19Y49         LUT5 (Prop_lut5_I4_O)        0.299     8.415 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13/O
+                         net (fo=2, routed)           0.442     8.857    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13_n_0
+    SLICE_X18Y50         LUT5 (Prop_lut5_I0_O)        0.327     9.184 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3/O
+                         net (fo=2, routed)           0.491     9.675    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3_n_0
+    SLICE_X17Y51         LUT6 (Prop_lut6_I0_O)        0.124     9.799 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     9.799    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7_n_0
+    SLICE_X17Y51         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.349 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    10.349    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_n_0
+    SLICE_X17Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.463 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    10.463    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3_n_0
+    SLICE_X17Y53         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.577 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4/CO[3]
+                         net (fo=1, routed)           0.000    10.577    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4_n_0
+    SLICE_X17Y54         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    10.800 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__5/O[0]
+                         net (fo=1, routed)           0.000    10.800    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[25]
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[25]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y54         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[25]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.800    
+  -------------------------------------------------------------------
+                         slack                                  2.020    
+
+Slack (MET) :             2.023ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[22]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.826ns  (logic 3.604ns (46.050%)  route 4.222ns (53.950%))
+  Logic Levels:           11  (CARRY4=5 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/O[1]
+                         net (fo=3, routed)           0.732     8.116    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_6
+    SLICE_X19Y49         LUT5 (Prop_lut5_I4_O)        0.299     8.415 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13/O
+                         net (fo=2, routed)           0.442     8.857    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13_n_0
+    SLICE_X18Y50         LUT5 (Prop_lut5_I0_O)        0.327     9.184 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3/O
+                         net (fo=2, routed)           0.491     9.675    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3_n_0
+    SLICE_X17Y51         LUT6 (Prop_lut6_I0_O)        0.124     9.799 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     9.799    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7_n_0
+    SLICE_X17Y51         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.349 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    10.349    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_n_0
+    SLICE_X17Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.463 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    10.463    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3_n_0
+    SLICE_X17Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    10.797 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4/O[1]
+                         net (fo=1, routed)           0.000    10.797    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[22]
+    SLICE_X17Y53         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y53         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[22]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y53         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[22]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.797    
+  -------------------------------------------------------------------
+                         slack                                  2.023    
+
+Slack (MET) :             2.044ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[24]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.805ns  (logic 3.583ns (45.904%)  route 4.222ns (54.096%))
+  Logic Levels:           11  (CARRY4=5 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/O[1]
+                         net (fo=3, routed)           0.732     8.116    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_6
+    SLICE_X19Y49         LUT5 (Prop_lut5_I4_O)        0.299     8.415 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13/O
+                         net (fo=2, routed)           0.442     8.857    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13_n_0
+    SLICE_X18Y50         LUT5 (Prop_lut5_I0_O)        0.327     9.184 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3/O
+                         net (fo=2, routed)           0.491     9.675    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3_n_0
+    SLICE_X17Y51         LUT6 (Prop_lut6_I0_O)        0.124     9.799 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     9.799    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7_n_0
+    SLICE_X17Y51         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.349 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    10.349    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_n_0
+    SLICE_X17Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.463 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    10.463    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3_n_0
+    SLICE_X17Y53         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    10.776 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4/O[3]
+                         net (fo=1, routed)           0.000    10.776    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[24]
+    SLICE_X17Y53         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y53         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[24]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y53         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[24]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.776    
+  -------------------------------------------------------------------
+                         slack                                  2.044    
+
+Slack (MET) :             2.118ns  (required time - arrival time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[23]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.731ns  (logic 3.509ns (45.387%)  route 4.222ns (54.613%))
+  Logic Levels:           11  (CARRY4=5 LUT3=1 LUT5=3 LUT6=2)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.682ns = ( 12.682 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.971ns
+    Clock Pessimism Removal (CPR):    0.230ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.207     1.207    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.101     1.308 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.663     2.971    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y52         FDRE (Prop_fdre_C_Q)         0.518     3.489 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[9]/Q
+                         net (fo=12, routed)          1.111     4.600    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[3]
+    SLICE_X13Y48         LUT3 (Prop_lut3_I1_O)        0.150     4.750 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12/O
+                         net (fo=4, routed)           0.796     5.546    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_12_n_0
+    SLICE_X18Y52         LUT5 (Prop_lut5_I1_O)        0.332     5.878 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2/O
+                         net (fo=2, routed)           0.651     6.529    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_2_n_0
+    SLICE_X19Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.653 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6/O
+                         net (fo=1, routed)           0.000     6.653    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_i_6_n_0
+    SLICE_X19Y52         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     7.051 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1/CO[3]
+                         net (fo=1, routed)           0.000     7.051    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__1_n_0
+    SLICE_X19Y53         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     7.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2/O[1]
+                         net (fo=3, routed)           0.732     8.116    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__0_carry__2_n_6
+    SLICE_X19Y49         LUT5 (Prop_lut5_I4_O)        0.299     8.415 f  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13/O
+                         net (fo=2, routed)           0.442     8.857    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_13_n_0
+    SLICE_X18Y50         LUT5 (Prop_lut5_I0_O)        0.327     9.184 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3/O
+                         net (fo=2, routed)           0.491     9.675    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_3_n_0
+    SLICE_X17Y51         LUT6 (Prop_lut6_I0_O)        0.124     9.799 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7/O
+                         net (fo=1, routed)           0.000     9.799    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_i_7_n_0
+    SLICE_X17Y51         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    10.349 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2/CO[3]
+                         net (fo=1, routed)           0.000    10.349    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__2_n_0
+    SLICE_X17Y52         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114    10.463 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3/CO[3]
+                         net (fo=1, routed)           0.000    10.463    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__3_n_0
+    SLICE_X17Y53         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    10.702 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum__95_carry__4/O[2]
+                         net (fo=1, routed)           0.000    10.702    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/a_sum[23]
+    SLICE_X17Y53         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.101    11.101    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.091    11.192 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        1.490    12.682    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X17Y53         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[23]/C
+                         clock pessimism              0.230    12.912    
+                         clock uncertainty           -0.154    12.758    
+    SLICE_X17Y53         FDRE (Setup_fdre_C_D)        0.062    12.820    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/A_reg[23]
+  -------------------------------------------------------------------
+                         required time                         12.820    
+                         arrival time                         -10.702    
+  -------------------------------------------------------------------
+                         slack                                  2.118    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.065ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[13][11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14][11]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.339ns  (logic 0.128ns (37.800%)  route 0.211ns (62.200%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.204ns
+    Source Clock Delay      (SCD):    0.908ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.567     0.908    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X7Y47          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[13][11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y47          FDRE (Prop_fdre_C_Q)         0.128     1.036 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[13][11]/Q
+                         net (fo=7, routed)           0.211     1.246    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/rotr0_in3_in[4]
+    SLICE_X6Y50          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14][11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.834     1.204    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X6Y50          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14][11]/C
+                         clock pessimism             -0.029     1.175    
+    SLICE_X6Y50          FDRE (Hold_fdre_C_D)         0.006     1.181    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14][11]
+  -------------------------------------------------------------------
+                         required time                         -1.181    
+                         arrival time                           1.246    
+  -------------------------------------------------------------------
+                         slack                                  0.065    
+
+Slack (MET) :             0.071ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][20]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.415ns  (logic 0.141ns (33.998%)  route 0.274ns (66.002%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.200ns
+    Source Clock Delay      (SCD):    0.899ns
+    Clock Pessimism Removal (CPR):    0.034ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.558     0.899    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X23Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y54         FDRE (Prop_fdre_C_Q)         0.141     1.040 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][20]/Q
+                         net (fo=4, routed)           0.274     1.313    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][31]_0[20]
+    SLICE_X14Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.830     1.200    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X14Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][20]/C
+                         clock pessimism             -0.034     1.166    
+    SLICE_X14Y54         FDRE (Hold_fdre_C_D)         0.076     1.242    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][20]
+  -------------------------------------------------------------------
+                         required time                         -1.242    
+                         arrival time                           1.313    
+  -------------------------------------------------------------------
+                         slack                                  0.071    
+
+Slack (MET) :             0.075ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][10]/C
+                            (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[2][10]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.421ns  (logic 0.164ns (38.995%)  route 0.257ns (61.005%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.202ns
+    Source Clock Delay      (SCD):    0.903ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.562     0.903    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X16Y51         FDSE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y51         FDSE (Prop_fdse_C_Q)         0.164     1.067 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][10]/Q
+                         net (fo=3, routed)           0.257     1.323    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/reg[3]_3[10]
+    SLICE_X14Y48         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[2][10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.832     1.202    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X14Y48         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[2][10]/C
+                         clock pessimism             -0.029     1.173    
+    SLICE_X14Y48         FDRE (Hold_fdre_C_D)         0.075     1.248    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[2][10]
+  -------------------------------------------------------------------
+                         required time                         -1.248    
+                         arrival time                           1.323    
+  -------------------------------------------------------------------
+                         slack                                  0.075    
+
+Slack (MET) :             0.080ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[4][15]_U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_2/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[5][15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.454ns  (logic 0.252ns (55.483%)  route 0.202ns (44.517%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.223ns
+    Source Clock Delay      (SCD):    0.927ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.586     0.927    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X4Y48          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[4][15]_U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_2/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y48          FDRE (Prop_fdre_C_Q)         0.148     1.075 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[4][15]_U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_2/Q
+                         net (fo=1, routed)           0.202     1.277    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[4][15]_U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_2_n_0
+    SLICE_X5Y50          LUT2 (Prop_lut2_I0_O)        0.104     1.381 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg_gate__15/O
+                         net (fo=1, routed)           0.000     1.381    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg_gate__15_n_0
+    SLICE_X5Y50          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[5][15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.853     1.223    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X5Y50          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[5][15]/C
+                         clock pessimism             -0.029     1.194    
+    SLICE_X5Y50          FDRE (Hold_fdre_C_D)         0.107     1.301    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[5][15]
+  -------------------------------------------------------------------
+                         required time                         -1.301    
+                         arrival time                           1.381    
+  -------------------------------------------------------------------
+                         slack                                  0.080    
+
+Slack (MET) :             0.083ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][13]/C
+                            (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/B_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.460ns  (logic 0.210ns (45.663%)  route 0.250ns (54.337%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.202ns
+    Source Clock Delay      (SCD):    0.903ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.562     0.903    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X16Y52         FDSE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y52         FDSE (Prop_fdse_C_Q)         0.164     1.067 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][13]/Q
+                         net (fo=3, routed)           0.250     1.316    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/reg[3]_3[13]
+    SLICE_X19Y49         LUT3 (Prop_lut3_I2_O)        0.046     1.362 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/B[13]_i_1/O
+                         net (fo=1, routed)           0.000     1.362    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/mux_out_array[1]_10[13]
+    SLICE_X19Y49         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/B_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.832     1.202    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X19Y49         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/B_reg[13]/C
+                         clock pessimism             -0.029     1.173    
+    SLICE_X19Y49         FDRE (Hold_fdre_C_D)         0.107     1.280    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/B_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -1.280    
+                         arrival time                           1.362    
+  -------------------------------------------------------------------
+                         slack                                  0.083    
+
+Slack (MET) :             0.085ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/F_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.476ns  (logic 0.209ns (43.899%)  route 0.267ns (56.101%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.271ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.200ns
+    Source Clock Delay      (SCD):    0.900ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.559     0.900    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y50         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y50         FDRE (Prop_fdre_C_Q)         0.164     1.064 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/E_reg[0]/Q
+                         net (fo=13, routed)          0.267     1.331    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/rotr0_in[26]
+    SLICE_X20Y45         LUT3 (Prop_lut3_I0_O)        0.045     1.376 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/F[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.376    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/mux_out_array[5]_13[0]
+    SLICE_X20Y45         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/F_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.830     1.200    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X20Y45         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/F_reg[0]/C
+                         clock pessimism             -0.029     1.171    
+    SLICE_X20Y45         FDRE (Hold_fdre_C_D)         0.120     1.291    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/F_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.291    
+                         arrival time                           1.376    
+  -------------------------------------------------------------------
+                         slack                                  0.085    
+
+Slack (MET) :             0.099ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[0][19]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[3][19]_srl3___U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_1/D
+                            (rising edge-triggered cell SRL16E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.430ns  (logic 0.148ns (34.406%)  route 0.282ns (65.594%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.269ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.204ns
+    Source Clock Delay      (SCD):    0.906ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.565     0.906    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X10Y52         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[0][19]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y52         FDRE (Prop_fdre_C_Q)         0.148     1.054 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[0][19]/Q
+                         net (fo=7, routed)           0.282     1.336    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/rotr0_in[2]
+    SLICE_X8Y46          SRL16E                                       r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[3][19]_srl3___U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_1/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.834     1.204    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X8Y46          SRL16E                                       r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[3][19]_srl3___U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_1/CLK
+                         clock pessimism             -0.029     1.175    
+    SLICE_X8Y46          SRL16E (Hold_srl16e_CLK_D)
+                                                      0.062     1.237    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[3][19]_srl3___U0_sha256_hw_dp_exp_unit_wi_ff_reg_r_1
+  -------------------------------------------------------------------
+                         required time                         -1.237    
+                         arrival time                           1.336    
+  -------------------------------------------------------------------
+                         slack                                  0.099    
+
+Slack (MET) :             0.103ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][21]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][21]/D
+                            (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.449ns  (logic 0.141ns (31.438%)  route 0.308ns (68.562%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.200ns
+    Source Clock Delay      (SCD):    0.899ns
+    Clock Pessimism Removal (CPR):    0.034ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.558     0.899    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X23Y54         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][21]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y54         FDRE (Prop_fdre_C_Q)         0.141     1.040 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][21]/Q
+                         net (fo=4, routed)           0.308     1.347    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[6][31]_0[21]
+    SLICE_X14Y54         FDSE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.830     1.200    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X14Y54         FDSE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][21]/C
+                         clock pessimism             -0.034     1.166    
+    SLICE_X14Y54         FDSE (Hold_fdse_C_D)         0.078     1.244    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[7][21]
+  -------------------------------------------------------------------
+                         required time                         -1.244    
+                         arrival time                           1.347    
+  -------------------------------------------------------------------
+                         slack                                  0.103    
+
+Slack (MET) :             0.103ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[3][9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][9]/D
+                            (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.505ns  (logic 0.292ns (57.867%)  route 0.213ns (42.133%))
+  Logic Levels:           2  (CARRY4=1 LUT2=1)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.201ns
+    Source Clock Delay      (SCD):    0.905ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.564     0.905    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X14Y49         FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[3][9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X14Y49         FDRE (Prop_fdre_C_Q)         0.128     1.033 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[3][9]/Q
+                         net (fo=4, routed)           0.213     1.245    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/reg[5]_5[9]
+    SLICE_X16Y51         LUT2 (Prop_lut2_I0_O)        0.098     1.343 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM1_tmp_carry__1_i_3/O
+                         net (fo=1, routed)           0.000     1.343    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM1_tmp_carry__1_i_3_n_0
+    SLICE_X16Y51         CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.066     1.409 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM1_tmp_carry__1/O[1]
+                         net (fo=1, routed)           0.000     1.409    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM1_tmp[9]
+    SLICE_X16Y51         FDSE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.831     1.201    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/aclk
+    SLICE_X16Y51         FDSE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][9]/C
+                         clock pessimism             -0.029     1.172    
+    SLICE_X16Y51         FDSE (Hold_fdse_C_D)         0.134     1.306    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/DM_reg[1][9]
+  -------------------------------------------------------------------
+                         required time                         -1.306    
+                         arrival time                           1.409    
+  -------------------------------------------------------------------
+                         slack                                  0.103    
+
+Slack (MET) :             0.105ns  (arrival time - required time)
+  Source:                 top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14][2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[15][8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.478ns  (logic 0.417ns (87.294%)  route 0.061ns (12.706%))
+  Logic Levels:           4  (CARRY4=3 LUT6=1)
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.204ns
+    Source Clock Delay      (SCD):    0.908ns
+    Clock Pessimism Removal (CPR):    0.029ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.315     0.315    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.026     0.341 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.567     0.908    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X6Y48          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14][2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y48          FDRE (Prop_fdre_C_Q)         0.164     1.072 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14][2]/Q
+                         net (fo=3, routed)           0.060     1.132    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[14]_1[2]
+    SLICE_X7Y48          LUT6 (Prop_lut6_I1_O)        0.045     1.177 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out__2_carry_i_5/O
+                         net (fo=1, routed)           0.000     1.177    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out__2_carry_i_5_n_0
+    SLICE_X7Y48          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.115     1.292 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out__2_carry/CO[3]
+                         net (fo=1, routed)           0.000     1.292    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out__2_carry_n_0
+    SLICE_X7Y49          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.039     1.331 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out__2_carry__0/CO[3]
+                         net (fo=1, routed)           0.001     1.331    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out__2_carry__0_n_0
+    SLICE_X7Y50          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.054     1.385 r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out__2_carry__1/O[0]
+                         net (fo=1, routed)           0.000     1.385    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/sum_out[8]
+    SLICE_X7Y50          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[15][8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  top_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.341     0.341    top_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y15       BUFG (Prop_bufg_I_O)         0.029     0.370 r  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1516, routed)        0.834     1.204    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/aclk
+    SLICE_X7Y50          FDRE                                         r  top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[15][8]/C
+                         clock pessimism             -0.029     1.175    
+    SLICE_X7Y50          FDRE (Hold_fdre_C_D)         0.105     1.280    top_i/sha256_ctrl_axi/U0/sha256_hw/dp/exp_unit/wi_ff_reg[15][8]
+  -------------------------------------------------------------------
+                         required time                         -1.280    
+                         arrival time                           1.385    
+  -------------------------------------------------------------------
+                         slack                                  0.105    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { top_i/ps7/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I       n/a            2.155         10.000      7.845      BUFGCTRL_X0Y15  top_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X8Y40     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/areset_d1_reg/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X2Y38     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[0]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X2Y38     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[1]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X2Y40     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[2]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X2Y38     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[3]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X2Y40     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[4]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X2Y40     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[5]/C
+Min Period        n/a     FDSE/C       n/a            1.000         10.000      9.000      SLICE_X9Y40     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/FSM_sequential_state_reg[0]/C
+Min Period        n/a     FDRE/C       n/a            1.000         10.000      9.000      SLICE_X9Y40     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/ar_cmd_fsm_0/FSM_sequential_state_reg[1]/C
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y43     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y43     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y44     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y44     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X4Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y43     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y43     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y42     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y44     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+High Pulse Width  Fast    SRLC32E/CLK  n/a            0.980         5.000       4.020      SLICE_X8Y44     top_i/ps7_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+
+
+

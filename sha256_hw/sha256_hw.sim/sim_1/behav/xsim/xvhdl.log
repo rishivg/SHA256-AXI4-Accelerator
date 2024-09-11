@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mfaizan/isp_rtl/Sha256_Hw_Accelerator/Code/axi_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mfaizan/isp_rtl/Sha256_Hw_Accelerator/Code/sha256_ctrl_axi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sha256_ctrl_axi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/mfaizan/isp_rtl/Sha256_Hw_Accelerator/Code/sha256_tb_axi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sha256_tb_axi'

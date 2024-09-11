@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Code/axi_pkg.vhd" \
+"../../../../../Code/sha256_pkg.vhd" \
+"../../../../../Code/fa.vhd" \
+"../../../../../Code/csa.vhd" \
+"../../../../../Code/sha256_cu.vhd" \
+"../../../../../Code/sha256_exp_unit.vhd" \
+"../../../../../Code/sha256_core.vhd" \
+"../../../../../Code/sha256.vhd" \
+"../../../../../Code/sha256_ctrl_axi.vhd" \
+"../../../../../Code/sha256_tb_axi.vhd" \
+
+# Do not sort compile order
+nosort

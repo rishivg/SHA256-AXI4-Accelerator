@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sha256_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sha256_pkg" />
+            <top_module name="sha256_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="904.034 ns"></ZoomEndTime>
+      <Cursor1Time time="18.081 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="222"></NameColumnWidth>
+      <ValueColumnWidth column_width="107"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject type="array" fp_name="/sha256_tb/sha_msg_test">
+      <obj_property name="ElementShortName">sha_msg_test[1:0][511:0]</obj_property>
+      <obj_property name="ObjectShortName">sha_msg_test[1:0][511:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/sha_hash_test">
+      <obj_property name="ElementShortName">sha_hash_test[255:0]</obj_property>
+      <obj_property name="ObjectShortName">sha_hash_test[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/sha_hash_func">
+      <obj_property name="ElementShortName">sha_hash_func[255:0]</obj_property>
+      <obj_property name="ObjectShortName">sha_hash_func[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/sha_hash_func2">
+      <obj_property name="ElementShortName">sha_hash_func2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">sha_hash_func2[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/sha_hash_test2">
+      <obj_property name="ElementShortName">sha_hash_test2[255:0]</obj_property>
+      <obj_property name="ObjectShortName">sha_hash_test2[255:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/msg_valid">
+      <obj_property name="ElementShortName">msg_valid</obj_property>
+      <obj_property name="ObjectShortName">msg_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/hash_ack">
+      <obj_property name="ElementShortName">hash_ack</obj_property>
+      <obj_property name="ObjectShortName">hash_ack</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/hash_valid">
+      <obj_property name="ElementShortName">hash_valid</obj_property>
+      <obj_property name="ObjectShortName">hash_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/mux_sel">
+      <obj_property name="ElementShortName">mux_sel</obj_property>
+      <obj_property name="ObjectShortName">mux_sel</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/word_sel">
+      <obj_property name="ElementShortName">word_sel</obj_property>
+      <obj_property name="ObjectShortName">word_sel</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/msg_ready">
+      <obj_property name="ElementShortName">msg_ready</obj_property>
+      <obj_property name="ObjectShortName">msg_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/en">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/rst_AE">
+      <obj_property name="ElementShortName">rst_AE</obj_property>
+      <obj_property name="ObjectShortName">rst_AE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/en_DM">
+      <obj_property name="ElementShortName">en_DM</obj_property>
+      <obj_property name="ObjectShortName">en_DM</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/mux_sel_AE">
+      <obj_property name="ElementShortName">mux_sel_AE</obj_property>
+      <obj_property name="ObjectShortName">mux_sel_AE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/en_DM_AE">
+      <obj_property name="ElementShortName">en_DM_AE</obj_property>
+      <obj_property name="ObjectShortName">en_DM_AE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/msg_last">
+      <obj_property name="ElementShortName">msg_last</obj_property>
+      <obj_property name="ObjectShortName">msg_last</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/en_AE">
+      <obj_property name="ElementShortName">en_AE</obj_property>
+      <obj_property name="ObjectShortName">en_AE</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/msg_ready2">
+      <obj_property name="ElementShortName">msg_ready2</obj_property>
+      <obj_property name="ObjectShortName">msg_ready2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sha256_tb/hash_valid2">
+      <obj_property name="ElementShortName">hash_valid2</obj_property>
+      <obj_property name="ObjectShortName">hash_valid2</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/w_array">
+      <obj_property name="ElementShortName">w_array[15:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_array[15:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/w_array_exp">
+      <obj_property name="ElementShortName">w_array_exp[63:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_array_exp[63:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/mi">
+      <obj_property name="ElementShortName">mi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mi[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/wi">
+      <obj_property name="ElementShortName">wi[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wi[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/mi1">
+      <obj_property name="ElementShortName">mi1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mi1[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/mi2">
+      <obj_property name="ElementShortName">mi2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mi2[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sha256_tb/mux_sel_H">
+      <obj_property name="ElementShortName">mux_sel_H[1:0]</obj_property>
+      <obj_property name="ObjectShortName">mux_sel_H[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/sha256_tb/K_index">
+      <obj_property name="ElementShortName">K_index</obj_property>
+      <obj_property name="ObjectShortName">K_index</obj_property>
+   </wvobject>
+</wave_config>
